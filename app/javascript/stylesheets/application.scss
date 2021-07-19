@@ -2,3 +2,5 @@
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 // custom.scssに記載したコードを読み込むにはインポートする必要があるので、application.scssに以下のコードを追加してください。
 @import "custom";
+@import "list/new";
+@import "top"
