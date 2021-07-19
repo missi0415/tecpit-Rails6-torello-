@@ -17,15 +17,13 @@ class CardController < ApplicationController
   
   
   def show 
-    @card = Card.find_by(id: params[:id])
   end
   
   def edit 
-    @card = Card.find_by(id: params[:id])
+    @lists = List.where(user: current_user)
   end
   
   def update
-    @card = Card.find_by(id: params[:id])
     if @card.update(card_params)
       redirect_to :root
     else
